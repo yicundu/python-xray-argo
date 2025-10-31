@@ -129,8 +129,7 @@ class StreamlitAppWaker:
 
     def wakeup_app(self):
         """执行唤醒流程"""
-        if not self.APP_URL:python-xray-argo-dvb4byrzcsudjj2fqqvwyh
-.streamlit.app
+        if not self.APP_URL:python-xray-argo-dvb4byrzcsudjj2fqqvwyh.streamlit.app
             raise Exception("⚠️ 环境变量 STREAMLIT_APP_URL 未配置。")
             
         logger.info(f"👉 访问应用URL: {self.APP_URL}")
