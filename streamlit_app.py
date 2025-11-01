@@ -13,8 +13,8 @@ from threading import Thread
 
 # Environment variables
 UPLOAD_URL = os.environ.get('UPLOAD_URL', '')            # 节点或订阅上传地址,只填写这个地址将上传节点,同时填写PROJECT_URL将上传订阅，例如：https://merge.serv00.net
-PROJECT_URL = os.environ.get('PROJECT_URL', '')          # 项目url,需要自动保活或自动上传订阅需要填写,例如：https://www.google.com,
-AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'  # false关闭自动保活, true开启自动保活，默认关闭
+PROJECT_URL = os.environ.get('PROJECT_URL', 'https://python-xray-argo-dvb4byrzcsudjj2fqqvwyh.streamlit.app')          # 项目url,需要自动保活或自动上传订阅需要填写,例如：https://www.google.com,
+AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'true').lower() == 'true'  # false关闭自动保活, true开启自动保活，默认关闭
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')      # 运行路径,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'cundu')              # 订阅token,默认sub，例如：https://www.google.com/sub
 UUID = os.environ.get('UUID', 'edd3c727-615a-406e-8910-8610700c8e72')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
